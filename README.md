@@ -1,2 +1,2 @@
-# RP Gamemode [Scripts/SQL]
+# RP Released
 Next Life RP - MTA:SA - Public Test Version
