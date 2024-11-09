@@ -1,0 +1,36 @@
+
+GUIEditor = {
+    button = {},
+    label = {}
+}
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()
+local screenW, screenH = guiGetScreenSize()
+        panel = guiCreateWindow((screenW - 336) / 2, (screenH - 352) / 2, 336, 352, "Enviar Dinero", false)
+        guiWindowSetSizable(panel, false)
+        guiSetProperty(panel, "CaptionColour", "FFFF0000")
+
+        juga = guiCreateGridList(10, 29, 194, 316, false, panel)
+        guiGridListAddColumn(juga, "Jugadores", 0.9)
+
+        GUIEditor.label[1] = guiCreateLabel(201, 143, 62, 15, "", false, juga)
+
+        text = guiCreateLabel(208, 32, 123, 17, "Nombre: jkendryyy", false, panel)
+        guiSetFont(text, "default-bold-small")
+        text1 = guiCreateLabel(208, 51, 123, 17, "Dinero: 100000000", false, panel)
+        guiSetFont(text1, "default-bold-small")
+        text2 = guiCreateLabel(210, 103, 68, 17, "Buscar", false, panel)
+        guiSetFont(text2, "default-bold-small")
+        edi = guiCreateEdit(210, 120, 116, 32, "", false, panel)
+        text3 = guiCreateLabel(210, 172, 68, 17, "Nombre", false, panel)
+        guiSetFont(text3, "default-bold-small")
+        edi1 = guiCreateEdit(210, 189, 116, 32, "", false, panel)
+        text4 = guiCreateLabel(210, 239, 68, 17, "Dinero", false, panel)
+        guiSetFont(text4, "default-bold-small")
+        edi2 = guiCreateEdit(211, 266, 115, 32, "", false, panel)
+        boton = guiCreateButton(210, 308, 116, 34, "Enviar", false, panel)
+        guiSetProperty(boton, "NormalTextColour", "FFFF0000")
+        GUIEditor.button[1] = guiCreateButton(208, 75, 52, 18, "Refresh", false, panel)
+        guiSetProperty(GUIEditor.button[1], "NormalTextColour", "FF30FF00")    
+    end
+)

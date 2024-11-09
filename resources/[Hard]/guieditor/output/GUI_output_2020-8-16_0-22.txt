@@ -1,0 +1,19 @@
+
+editNombre = guiCreateEdit(0.42, 0.48, 0.15, 0.04, "", true)
+
+
+editPass = guiCreateEdit(0.42, 0.57, 0.15, 0.04, "", true)
+guiEditSetMasked(editPass, true)
+
+local screenW, screenH = guiGetScreenSize()
+
+addEventHandler("onClientRender", root,
+    function()
+        dxDrawRectangle(screenW * 0.2445, screenH * 0.1888, screenW * 0.5110, screenH * 0.6237, tocolor(0, 0, 0, 131), false)
+        dxDrawText("Necesitas una cuenta para jugar. \n Si ya tienes una, logueate.", screenW * 0.4253, screenH * 0.3594, screenW * 0.5761, screenH * 0.3997, tocolor(255, 255, 255, 255), 1.10, "default-bold", "center", "top", false, false, false, false, false)
+        dxDrawImage(screenW * 0.3741, screenH * 0.1458, screenW * 0.2526, screenH * 0.3229, ":HUD/Imagens/Logo.png", 0, 0, 0, tocolor(255, 255, 255, 255), false)
+        dxDrawText("Usuario:", screenW * 0.4290, screenH * 0.4284, screenW * 0.5717, screenH * 0.4766, tocolor(255, 255, 255, 255), 1.10, "default-bold", "left", "bottom", false, false, false, false, false)
+        dxDrawText("Contraseña:", screenW * 0.4290, screenH * 0.5182, screenW * 0.5717, screenH * 0.5664, tocolor(255, 255, 255, 255), 1.10, "default-bold", "left", "bottom", false, false, false, false, false)
+        dxDrawRectangle(592, 476, 185, 31, tocolor(254, 225, 251, 254), false)
+    end
+)

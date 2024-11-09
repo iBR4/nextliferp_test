@@ -1,0 +1,22 @@
+
+GUIEditor = {
+    window = {},
+    progressbar = {},
+    label = {}
+}
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()
+        GUIEditor.window[1] = guiCreateWindow(470, 293, 454, 191, "Habilidades de Nombre_Apellido", false)
+        guiWindowSetSizable(GUIEditor.window[1], false)
+        guiSetProperty(GUIEditor.window[1], "CaptionColour", "FFB1F6A5")
+
+        GUIEditor.progressbar[1] = guiCreateProgressBar(20, 45, 73, 19, false, GUIEditor.window[1])
+        GUIEditor.label[1] = guiCreateLabel(26, 27, 86, 18, "Camionero", false, GUIEditor.window[1])
+        guiSetFont(GUIEditor.label[1], "default-bold-small")
+        GUIEditor.label[2] = guiCreateLabel(36, 64, 86, 18, "Nivel: 1", false, GUIEditor.window[1])
+        GUIEditor.progressbar[2] = guiCreateProgressBar(122, 45, 73, 19, false, GUIEditor.window[1])
+        GUIEditor.label[3] = guiCreateLabel(128, 27, 86, 18, "Carpintero", false, GUIEditor.window[1])
+        guiSetFont(GUIEditor.label[3], "default-bold-small")
+        GUIEditor.label[4] = guiCreateLabel(138, 64, 86, 18, "Nivel: 1", false, GUIEditor.window[1])    
+    end
+)

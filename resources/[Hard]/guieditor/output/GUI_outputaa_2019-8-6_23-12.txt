@@ -1,0 +1,20 @@
+
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()
+local screenW, screenH = guiGetScreenSize()
+        Panel = guiCreateWindow((screenW - 422) / 2, (screenH - 484) / 2, 422, 484, "Panel Informacion (Clan)", false)
+        guiWindowSetSizable(Panel, false)
+        guiSetProperty(Panel, "CaptionColour", "FFFF0000")
+
+        memo1 = guiCreateMemo(10, 74, 400, 350, "Aqui Pondran Toda la Informacion de los Clanes...........", false, Panel)
+        guiMemoSetReadOnly(memo1, true)
+        cerrar = guiCreateButton(147, 434, 132, 40, "Cerrar", false, Panel)
+        guiSetProperty(cerrar, "NormalTextColour", "FF52F40A")
+        Text = guiCreateLabel(7, 25, 403, 28, "Aqui Podras Ver Toda la Informacion de los Clanes Como: ", false, Panel)
+        guiLabelSetColor(Text, 7, 232, 246)
+        guiLabelSetHorizontalAlign(Text, "center", false)
+        text1 = guiCreateLabel(7, 52, 403, 22, "(Requisitos , Dueño del clan y Comandos)", false, Panel)
+        guiLabelSetColor(text1, 82, 244, 10)
+        guiLabelSetHorizontalAlign(text1, "center", false)    
+    end
+)

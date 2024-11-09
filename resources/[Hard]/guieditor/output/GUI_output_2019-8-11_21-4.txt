@@ -1,0 +1,14 @@
+
+GUIEditor = {
+    button = {},
+    window = {}
+}
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()
+        GUIEditor.window[1] = guiCreateWindow(319, 211, 314, 288, "", false)
+        guiWindowSetSizable(GUIEditor.window[1], false)
+
+        GUIEditor.button[1] = guiCreateButton(47, 51, 133, 71, "fawfaf", false, GUIEditor.window[1])
+        guiSetProperty(GUIEditor.button[1], "NormalTextColour", "FF7401A4")    
+    end
+)

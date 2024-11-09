@@ -1,0 +1,18 @@
+
+GUIEditor = {
+    gridlist = {},
+    window = {},
+    button = {}
+}
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()
+        GUIEditor.window[1] = guiCreateWindow(467, 258, 439, 288, "Inventario", false)
+        guiWindowSetSizable(GUIEditor.window[1], false)
+
+        GUIEditor.gridlist[1] = guiCreateGridList(14, 31, 264, 247, false, GUIEditor.window[1])
+        guiGridListAddColumn(GUIEditor.gridlist[1], "Objeto", 0.5)
+        guiGridListAddColumn(GUIEditor.gridlist[1], "Cantidad", 0.5)
+        GUIEditor.button[1] = guiCreateButton(294, 31, 126, 39, "Usar", false, GUIEditor.window[1])
+        GUIEditor.button[2] = guiCreateButton(294, 80, 126, 39, "Tirar", false, GUIEditor.window[1])    
+    end
+)

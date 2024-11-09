@@ -1,0 +1,20 @@
+
+GUIEditor = {
+    button = {},
+    window = {},
+    edit = {},
+    label = {}
+}
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()
+        GUIEditor.window[1] = guiCreateWindow(455, 179, 478, 439, "Panel de Login", false)
+        guiWindowSetSizable(GUIEditor.window[1], false)
+
+        GUIEditor.label[1] = guiCreateLabel(109, 103, 184, 70, "Usuario", false, GUIEditor.window[1])
+        GUIEditor.label[2] = guiCreateLabel(99, 209, 184, 70, "Contraseña", false, GUIEditor.window[1])
+        GUIEditor.edit[1] = guiCreateEdit(177, 93, 190, 34, "", false, GUIEditor.window[1])
+        GUIEditor.edit[2] = guiCreateEdit(177, 199, 190, 34, "", false, GUIEditor.window[1])
+        GUIEditor.button[1] = guiCreateButton(187, 301, 151, 42, "Loguear", false, GUIEditor.window[1])
+        GUIEditor.button[2] = guiCreateButton(187, 357, 151, 42, "Registrarse", false, GUIEditor.window[1])    
+    end
+)

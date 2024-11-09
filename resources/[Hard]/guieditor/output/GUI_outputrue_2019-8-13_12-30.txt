@@ -1,0 +1,18 @@
+
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()
+        panelruedas = guiCreateWindow(566, 350, 321, 346, "Ruedas", false)
+        guiWindowSetSizable(panelruedas, false)
+
+        rueda = guiCreateButton(19, 52, 84, 44, "Rueda 1", false, panelruedas)
+        rueda1 = guiCreateButton(121, 52, 84, 44, "Rueda 2", false, panelruedas)
+        rueda2 = guiCreateButton(220, 52, 84, 44, "Rueda 3", false, panelruedas)
+        rueda3 = guiCreateButton(19, 123, 84, 44, "Rueda 4", false, panelruedas)
+        rueda4 = guiCreateButton(121, 123, 84, 44, "Rueda 5", false, panelruedas)
+        rueda5 = guiCreateButton(220, 123, 84, 44, "Rueda 6", false, panelruedas)
+        rueda6 = guiCreateButton(19, 192, 84, 44, "Rueda 7", false, panelruedas)
+        rueda7 = guiCreateButton(121, 192, 84, 44, "Rueda 8", false, panelruedas)
+        rueda8 = guiCreateButton(220, 192, 84, 44, "Rueda 9", false, panelruedas)
+        cerrar = guiCreateButton(121, 264, 84, 44, "Cerrar", false, panelruedas)    
+    end
+)

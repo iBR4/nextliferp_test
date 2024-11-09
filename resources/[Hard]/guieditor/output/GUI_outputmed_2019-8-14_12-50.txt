@@ -1,0 +1,19 @@
+
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()
+local screenW, screenH = guiGetScreenSize()
+        panel = guiCreateWindow((screenW - 307) / 2, (screenH - 379) / 2, 307, 379, "Panel Medico", false)
+        guiWindowSetSizable(panel, false)
+        guiSetAlpha(panel, 0.73)
+        guiSetProperty(panel, "CaptionColour", "FFFD0000")
+
+        list = guiCreateGridList(17, 55, 145, 286, false, panel)
+        guiGridListAddColumn(list, "Jugadores", 0.9)
+        boton1 = guiCreateButton(179, 102, 103, 44, "Sanar", false, panel)
+        guiSetFont(boton1, "default-bold-small")
+        guiSetProperty(boton1, "NormalTextColour", "FF17FE00")
+        cerrar = guiCreateButton(179, 240, 103, 44, "Cerrar", false, panel)
+        guiSetFont(cerrar, "default-bold-small")
+        guiSetProperty(cerrar, "NormalTextColour", "FF17FE00")    
+    end
+)

@@ -1,0 +1,27 @@
+
+GUIEditor = {
+    button = {},
+    window = {},
+    label = {}
+}
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()
+        GUIEditor.window[1] = guiCreateWindow(393, 171, 624, 472, "PANEL MECANICO MALOS AIRES", false)
+        guiWindowSetSizable(GUIEditor.window[1], false)
+        guiSetProperty(GUIEditor.window[1], "CaptionColour", "FFE0FA04")
+
+        GUIEditor.button[1] = guiCreateButton(13, 28, 134, 51, "Subir suspension", false, GUIEditor.window[1])
+        GUIEditor.button[2] = guiCreateButton(15, 89, 132, 51, "Bajar suspension", false, GUIEditor.window[1])
+        GUIEditor.button[3] = guiCreateButton(154, 29, 133, 50, "Bajar trompa", false, GUIEditor.window[1])
+        GUIEditor.button[4] = guiCreateButton(155, 89, 132, 51, "Subir trompa", false, GUIEditor.window[1])
+        GUIEditor.button[5] = guiCreateButton(21, 178, 266, 43, "Quitar/Poner capo", false, GUIEditor.window[1])
+        GUIEditor.button[6] = guiCreateButton(21, 234, 266, 42, "Quitar/Poner maletero", false, GUIEditor.window[1])
+        GUIEditor.button[7] = guiCreateButton(23, 291, 264, 43, "Quitar/Poner p.conductor", false, GUIEditor.window[1])
+        GUIEditor.button[8] = guiCreateButton(23, 347, 264, 43, "Quitar/Poner p.acompañante", false, GUIEditor.window[1])
+        GUIEditor.button[9] = guiCreateButton(317, 180, 250, 41, "Quitar/Poner puerta trasera der.", false, GUIEditor.window[1])
+        GUIEditor.button[10] = guiCreateButton(319, 238, 248, 38, "Quitar/Pone puerta trasera izq.", false, GUIEditor.window[1])
+        GUIEditor.label[1] = guiCreateLabel(573, 5, 45, 14, "", false, GUIEditor.window[1])
+        GUIEditor.button[11] = guiCreateButton(576, -24900, 38, 768, "", false, GUIEditor.window[1])
+        GUIEditor.button[12] = guiCreateButton(580, 23, 34, 18, "X", false, GUIEditor.window[1])    
+    end
+)

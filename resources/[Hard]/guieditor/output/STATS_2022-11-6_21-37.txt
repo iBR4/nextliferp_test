@@ -1,0 +1,36 @@
+
+GUIEditor = {
+    tab = {},
+    tabpanel = {},
+    label = {},
+    button = {},
+    window = {}
+}
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()
+        GUIEditor.window[1] = guiCreateWindow(0.40, 0.24, 0.30, 0.55, "", true)
+        guiWindowSetSizable(GUIEditor.window[1], false)
+        guiSetAlpha(GUIEditor.window[1], 0.89)
+
+        GUIEditor.button[1] = guiCreateButton(0.92, 0.06, 0.06, 0.06, "X", true, GUIEditor.window[1])
+        guiSetProperty(GUIEditor.button[1], "NormalTextColour", "FFD30000")
+        GUIEditor.tabpanel[1] = guiCreateTabPanel(0.02, 0.07, 0.95, 0.91, true, GUIEditor.window[1])
+
+        GUIEditor.tab[1] = guiCreateTab("Principal", GUIEditor.tabpanel[1])
+
+        GUIEditor.label[1] = guiCreateLabel(0.03, 0.04, 0.94, 0.04, "Nombre completo: Thomas Smith", true, GUIEditor.tab[1])
+        guiSetFont(GUIEditor.label[1], "clear-normal")
+        GUIEditor.label[2] = guiCreateLabel(0.03, 0.16, 0.94, 0.04, "Sexo: Masculino", true, GUIEditor.tab[1])
+        guiSetFont(GUIEditor.label[2], "clear-normal")
+        GUIEditor.label[3] = guiCreateLabel(0.03, 0.20, 0.94, 0.04, "Edad: 22", true, GUIEditor.tab[1])
+        guiSetFont(GUIEditor.label[3], "clear-normal")
+        GUIEditor.label[4] = guiCreateLabel(0.03, 0.24, 0.94, 0.04, "Nacionalidad: Argentina", true, GUIEditor.tab[1])
+        guiSetFont(GUIEditor.label[4], "clear-normal")
+        GUIEditor.label[5] = guiCreateLabel(0.03, 0.31, 0.94, 0.04, "Nivel : 7", true, GUIEditor.tab[1])
+        guiSetFont(GUIEditor.label[5], "clear-normal")
+        GUIEditor.label[6] = guiCreateLabel(0.03, 0.50, 0.94, 0.04, "Trabajo I: Camionero", true, GUIEditor.tab[1])
+        guiSetFont(GUIEditor.label[6], "clear-normal")
+        GUIEditor.label[7] = guiCreateLabel(0.03, 0.68, 0.94, 0.04, "Vehiculo I: Premier", true, GUIEditor.tab[1])
+        guiSetFont(GUIEditor.label[7], "clear-normal")    
+    end
+)

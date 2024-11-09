@@ -1,0 +1,16 @@
+
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()
+local screenW, screenH = guiGetScreenSize()
+        panelalerones = guiCreateWindow((screenW - 331) / 2, (screenH - 274) / 2, 331, 274, "Alerones", false)
+        guiWindowSetSizable(panelalerones, false)
+
+        alerones = guiCreateButton(21, 64, 85, 40, "Alerones 1", false, panelalerones)
+        alerones1 = guiCreateButton(125, 64, 85, 40, "Alerones 2", false, panelalerones)
+        alerones2 = guiCreateButton(229, 64, 85, 40, "Alerones 3", false, panelalerones)
+        alerones3 = guiCreateButton(21, 132, 85, 40, "Alerones 4", false, panelalerones)
+        alerones4 = guiCreateButton(125, 132, 85, 40, "Alerones 5", false, panelalerones)
+        alerones5 = guiCreateButton(229, 132, 85, 40, "Alerones 6", false, panelalerones)
+        cerrar = guiCreateButton(125, 200, 85, 40, "Cerrar", false, panelalerones)    
+    end
+)

@@ -1,0 +1,20 @@
+
+GUIEditor = {
+    gridlist = {},
+    window = {},
+    button = {},
+    label = {}
+}
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()
+        GUIEditor.window[1] = guiCreateWindow(462, 187, 459, 380, "Tienda", false)
+        guiWindowSetSizable(GUIEditor.window[1], false)
+
+        GUIEditor.gridlist[1] = guiCreateGridList(10, 50, 439, 293, false, GUIEditor.window[1])
+        GUIEditor.label[1] = guiCreateLabel(31, 25, 408, 15, "Haz click sobre el objeto que quieres comprar y luego click en Comprar", false, GUIEditor.window[1])
+        GUIEditor.button[1] = guiCreateButton(20, 352, 182, 18, "Comprar", false, GUIEditor.window[1])
+        guiSetProperty(GUIEditor.button[1], "NormalTextColour", "FF34E01E")
+        GUIEditor.button[2] = guiCreateButton(257, 352, 182, 18, "Cerrar", false, GUIEditor.window[1])
+        guiSetProperty(GUIEditor.button[2], "NormalTextColour", "FFFD0000")    
+    end
+)

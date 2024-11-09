@@ -1,0 +1,28 @@
+
+
+local screenW, screenH = guiGetScreenSize()
+
+addEventHandler("onClientRender", root,
+    function()
+        dxDrawText("ÚNETE", (screenW * 0.2132) - 1, (screenH * 0.8611) - 1, (screenW * 0.2604) - 1, (screenH * 0.8844) - 1, tocolor(0, 0, 0, 255), 1.50, "default-bold", "center", "center", false, false, false, false, false)
+        dxDrawText("ÚNETE", (screenW * 0.2132) + 1, (screenH * 0.8611) - 1, (screenW * 0.2604) + 1, (screenH * 0.8844) - 1, tocolor(0, 0, 0, 255), 1.50, "default-bold", "center", "center", false, false, false, false, false)
+        dxDrawText("ÚNETE", (screenW * 0.2132) - 1, (screenH * 0.8611) + 1, (screenW * 0.2604) - 1, (screenH * 0.8844) + 1, tocolor(0, 0, 0, 255), 1.50, "default-bold", "center", "center", false, false, false, false, false)
+        dxDrawText("ÚNETE", (screenW * 0.2132) + 1, (screenH * 0.8611) + 1, (screenW * 0.2604) + 1, (screenH * 0.8844) + 1, tocolor(0, 0, 0, 255), 1.50, "default-bold", "center", "center", false, false, false, false, false)
+        dxDrawText("ÚNETE", screenW * 0.2132, screenH * 0.8611, screenW * 0.2604, screenH * 0.8844, tocolor(203, 203, 203, 104), 1.50, "default-bold", "center", "center", false, false, false, false, false)
+        dxDrawText("(/facebook)", (screenW * 0.2132) - 1, (screenH * 0.8911) - 1, (screenW * 0.2743) - 1, (screenH * 0.9144) - 1, tocolor(0, 0, 0, 255), 1.30, "default-bold", "left", "top", false, false, false, false, false)
+        dxDrawText("(/facebook)", (screenW * 0.2132) + 1, (screenH * 0.8911) - 1, (screenW * 0.2743) + 1, (screenH * 0.9144) - 1, tocolor(0, 0, 0, 255), 1.30, "default-bold", "left", "top", false, false, false, false, false)
+        dxDrawText("(/facebook)", (screenW * 0.2132) - 1, (screenH * 0.8911) + 1, (screenW * 0.2743) - 1, (screenH * 0.9144) + 1, tocolor(0, 0, 0, 255), 1.30, "default-bold", "left", "top", false, false, false, false, false)
+        dxDrawText("(/facebook)", (screenW * 0.2132) + 1, (screenH * 0.8911) + 1, (screenW * 0.2743) + 1, (screenH * 0.9144) + 1, tocolor(0, 0, 0, 255), 1.30, "default-bold", "left", "top", false, false, false, false, false)
+        dxDrawText("(/facebook)", screenW * 0.2132, screenH * 0.8911, screenW * 0.2743, screenH * 0.9144, tocolor(16, 68, 237, 255), 1.30, "default-bold", "left", "top", false, false, false, false, false)
+        dxDrawText("(/discord)", (screenW * 0.2132) - 1, (screenH * 0.9144) - 1, (screenW * 0.2785) - 1, (screenH * 0.9344) - 1, tocolor(0, 0, 0, 255), 1.30, "default-bold", "left", "top", false, false, false, false, false)
+        dxDrawText("(/discord)", (screenW * 0.2132) + 1, (screenH * 0.9144) - 1, (screenW * 0.2785) + 1, (screenH * 0.9344) - 1, tocolor(0, 0, 0, 255), 1.30, "default-bold", "left", "top", false, false, false, false, false)
+        dxDrawText("(/discord)", (screenW * 0.2132) - 1, (screenH * 0.9144) + 1, (screenW * 0.2785) - 1, (screenH * 0.9344) + 1, tocolor(0, 0, 0, 255), 1.30, "default-bold", "left", "top", false, false, false, false, false)
+        dxDrawText("(/discord)", (screenW * 0.2132) + 1, (screenH * 0.9144) + 1, (screenW * 0.2785) + 1, (screenH * 0.9344) + 1, tocolor(0, 0, 0, 255), 1.30, "default-bold", "left", "top", false, false, false, false, false)
+        dxDrawText("(/discord)", screenW * 0.2132, screenH * 0.9144, screenW * 0.2785, screenH * 0.9344, tocolor(141, 0, 0, 255), 1.30, "default-bold", "left", "top", false, false, false, false, false)
+        dxDrawText("(/paginas)", (screenW * 0.2132) - 1, (screenH * 0.9400) - 1, (screenW * 0.2785) - 1, (screenH * 0.9578) - 1, tocolor(0, 0, 0, 255), 1.30, "default", "left", "top", false, false, false, false, false)
+        dxDrawText("(/paginas)", (screenW * 0.2132) + 1, (screenH * 0.9400) - 1, (screenW * 0.2785) + 1, (screenH * 0.9578) - 1, tocolor(0, 0, 0, 255), 1.30, "default", "left", "top", false, false, false, false, false)
+        dxDrawText("(/paginas)", (screenW * 0.2132) - 1, (screenH * 0.9400) + 1, (screenW * 0.2785) - 1, (screenH * 0.9578) + 1, tocolor(0, 0, 0, 255), 1.30, "default", "left", "top", false, false, false, false, false)
+        dxDrawText("(/paginas)", (screenW * 0.2132) + 1, (screenH * 0.9400) + 1, (screenW * 0.2785) + 1, (screenH * 0.9578) + 1, tocolor(0, 0, 0, 255), 1.30, "default", "left", "top", false, false, false, false, false)
+        dxDrawText("(/paginas)", screenW * 0.2132, screenH * 0.9400, screenW * 0.2785, screenH * 0.9578, tocolor(203, 203, 203, 104), 1.30, "default", "left", "top", false, false, false, false, false)
+    end
+)

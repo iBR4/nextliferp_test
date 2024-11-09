@@ -1,0 +1,25 @@
+
+
+local screenW, screenH = guiGetScreenSize()
+
+addEventHandler("onClientRender", root,
+    function()
+        dxDrawLine((screenW * 0.3604) - 1, (screenH * 0.2778) - 1, (screenW * 0.3604) - 1, screenH * 0.7231, tocolor(0, 0, 0, 255), 1, false)
+        dxDrawLine(screenW * 0.6396, (screenH * 0.2778) - 1, (screenW * 0.3604) - 1, (screenH * 0.2778) - 1, tocolor(0, 0, 0, 255), 1, false)
+        dxDrawLine((screenW * 0.3604) - 1, screenH * 0.7231, screenW * 0.6396, screenH * 0.7231, tocolor(0, 0, 0, 255), 1, false)
+        dxDrawLine(screenW * 0.6396, screenH * 0.7231, screenW * 0.6396, (screenH * 0.2778) - 1, tocolor(0, 0, 0, 255), 1, false)
+        dxDrawRectangle(screenW * 0.3604, screenH * 0.2778, screenW * 0.2792, screenH * 0.4454, tocolor(1, 0, 0, 220), false)
+        dxDrawText("Tienda de Comidas", (screenW * 0.3594) - 1, (screenH * 0.2750) - 1, (screenW * 0.6396) - 1, (screenH * 0.3444) - 1, tocolor(0, 0, 0, 255), 2.00, "default-bold", "center", "center", false, false, false, false, false)
+        dxDrawText("Tienda de Comidas", (screenW * 0.3594) + 1, (screenH * 0.2750) - 1, (screenW * 0.6396) + 1, (screenH * 0.3444) - 1, tocolor(0, 0, 0, 255), 2.00, "default-bold", "center", "center", false, false, false, false, false)
+        dxDrawText("Tienda de Comidas", (screenW * 0.3594) - 1, (screenH * 0.2750) + 1, (screenW * 0.6396) - 1, (screenH * 0.3444) + 1, tocolor(0, 0, 0, 255), 2.00, "default-bold", "center", "center", false, false, false, false, false)
+        dxDrawText("Tienda de Comidas", (screenW * 0.3594) + 1, (screenH * 0.2750) + 1, (screenW * 0.6396) + 1, (screenH * 0.3444) + 1, tocolor(0, 0, 0, 255), 2.00, "default-bold", "center", "center", false, false, false, false, false)
+        dxDrawText("Tienda de Comidas", screenW * 0.3594, screenH * 0.2750, screenW * 0.6396, screenH * 0.3444, tocolor(255, 255, 255, 255), 2.00, "default-bold", "center", "center", false, false, false, false, false)
+        dxDrawLine(screenW * 0.3589, screenH * 0.3417, screenW * 0.6391, screenH * 0.3417, tocolor(251, 0, 0, 220), 1, false)
+        dxDrawImage(screenW * 0.3703, screenH * 0.3593, screenW * 0.2604, screenH * 0.2370, ":ModoK/img/image.png", 0, 0, 0, tocolor(255, 255, 255, 255), false)
+        dxDrawImage(screenW * 0.3755, screenH * 0.6083, screenW * 0.0906, screenH * 0.0481, ":ModoK/Img/boton.png", 0, 0, 0, tocolor(193, 0, 0, 202), false)
+        dxDrawText("Comprar Comida", screenW * 0.3818, screenH * 0.6213, screenW * 0.4609, screenH * 0.6398, tocolor(255, 255, 255, 255), 1.50, "default-bold", "center", "center", false, false, false, false, false)
+        dxDrawImage(screenW * 0.5344, screenH * 0.6083, screenW * 0.0911, screenH * 0.0481, ":ModoK/Img/boton.png", 0, 0, 0, tocolor(193, 0, 0, 202), false)
+        dxDrawText("Cerrar", screenW * 0.5375, screenH * 0.6241, screenW * 0.6203, screenH * 0.6407, tocolor(255, 255, 255, 255), 1.50, "default-bold", "center", "center", false, false, false, false, false)
+        dxDrawText("- Da en Comprar Comida y obtendras + 20 de Health por solo $100", screenW * 0.3635, screenH * 0.6769, screenW * 0.6344, screenH * 0.7139, tocolor(255, 255, 255, 255), 1.00, "default", "center", "center", false, false, false, false, false)
+    end
+)

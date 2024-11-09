@@ -1,0 +1,26 @@
+
+
+local screenW, screenH = guiGetScreenSize()
+
+addEventHandler("onClientRender", root,
+    function()
+        dxDrawRectangle(screenW * 0.8470, screenH * 0.7552, screenW * 0.1340, screenH * 0.0898, tocolor(0, 0, 0, 200), false)
+        dxDrawRectangle(screenW * 0.8470, screenH * 0.8581, screenW * 0.1340, screenH * 0.0898, tocolor(0, 0, 0, 200), false)
+        dxDrawRectangle(screenW * 0.8543, screenH * 0.9180, screenW * 0.1193, screenH * 0.0221, tocolor(0, 0, 0, 254), false)
+        dxDrawRectangle(screenW * 0.8572, screenH * 0.9232, screenW * 0.1127, screenH * 0.0117, tocolor(235, 0, 0, 254), false)
+        dxDrawRectangle(screenW * 0.8543, screenH * 0.8151, screenW * 0.1193, screenH * 0.0221, tocolor(0, 0, 0, 254), false)
+        dxDrawRectangle(screenW * 0.8580, screenH * 0.8203, screenW * 0.1127, screenH * 0.0117, tocolor(234, 154, 0, 254), false)
+        dxDrawText("Gasolina", screenW * 0.8821, screenH * 0.7565, screenW * 0.9561, screenH * 0.7682, tocolor(255, 255, 255, 255), 0.50, "bankgothic", "left", "top", false, false, false, false, false)
+        dxDrawText("Velocimetro", screenW * 0.8814, screenH * 0.8581, screenW * 0.9553, screenH * 0.8698, tocolor(255, 255, 255, 255), 0.50, "bankgothic", "left", "top", false, false, false, false, false)
+        dxDrawText("100 km/h", (screenW * 0.8814) - 1, (screenH * 0.8763) - 1, (screenW * 0.9671) - 1, (screenH * 0.8971) - 1, tocolor(0, 0, 0, 255), 1.00, "pricedown", "left", "top", false, false, false, false, false)
+        dxDrawText("100 km/h", (screenW * 0.8814) + 1, (screenH * 0.8763) - 1, (screenW * 0.9671) + 1, (screenH * 0.8971) - 1, tocolor(0, 0, 0, 255), 1.00, "pricedown", "left", "top", false, false, false, false, false)
+        dxDrawText("100 km/h", (screenW * 0.8814) - 1, (screenH * 0.8763) + 1, (screenW * 0.9671) - 1, (screenH * 0.8971) + 1, tocolor(0, 0, 0, 255), 1.00, "pricedown", "left", "top", false, false, false, false, false)
+        dxDrawText("100 km/h", (screenW * 0.8814) + 1, (screenH * 0.8763) + 1, (screenW * 0.9671) + 1, (screenH * 0.8971) + 1, tocolor(0, 0, 0, 255), 1.00, "pricedown", "left", "top", false, false, false, false, false)
+        dxDrawText("100 km/h", screenW * 0.8814, screenH * 0.8763, screenW * 0.9671, screenH * 0.8971, tocolor(255, 255, 255, 255), 1.00, "pricedown", "left", "top", false, false, false, false, false)
+        dxDrawText("100/100", (screenW * 0.8851) - 1, (screenH * 0.7747) - 1, (screenW * 0.9707) - 1, (screenH * 0.7956) - 1, tocolor(0, 0, 0, 255), 1.00, "pricedown", "left", "top", false, false, false, false, false)
+        dxDrawText("100/100", (screenW * 0.8851) + 1, (screenH * 0.7747) - 1, (screenW * 0.9707) + 1, (screenH * 0.7956) - 1, tocolor(0, 0, 0, 255), 1.00, "pricedown", "left", "top", false, false, false, false, false)
+        dxDrawText("100/100", (screenW * 0.8851) - 1, (screenH * 0.7747) + 1, (screenW * 0.9707) - 1, (screenH * 0.7956) + 1, tocolor(0, 0, 0, 255), 1.00, "pricedown", "left", "top", false, false, false, false, false)
+        dxDrawText("100/100", (screenW * 0.8851) + 1, (screenH * 0.7747) + 1, (screenW * 0.9707) + 1, (screenH * 0.7956) + 1, tocolor(0, 0, 0, 255), 1.00, "pricedown", "left", "top", false, false, false, false, false)
+        dxDrawText("100/100", screenW * 0.8851, screenH * 0.7747, screenW * 0.9707, screenH * 0.7956, tocolor(255, 255, 255, 255), 1.00, "pricedown", "left", "top", false, false, false, false, false)
+    end
+)

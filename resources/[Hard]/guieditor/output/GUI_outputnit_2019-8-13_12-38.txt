@@ -1,0 +1,12 @@
+
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()
+        panelnitro = guiCreateWindow(575, 396, 317, 195, "Nitros", false)
+        guiWindowSetSizable(panelnitro, false)
+
+        nitro = guiCreateButton(19, 61, 81, 48, "Nitro x2", false, panelnitro)
+        nitro1 = guiCreateButton(118, 61, 81, 48, "Nitro x5", false, panelnitro)
+        nitro2 = guiCreateButton(215, 61, 81, 48, "Nitro x10", false, panelnitro)
+        cerrar = guiCreateButton(118, 132, 81, 48, "Cerrar", false, panelnitro)    
+    end
+)

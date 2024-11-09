@@ -1,0 +1,34 @@
+
+GUIEditor = {
+    button = {}
+}
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()
+local screenW, screenH = guiGetScreenSize()
+        Panel = guiCreateWindow((screenW - 448) / 2, (screenH - 385) / 2, 448, 385, "TOP Panel Zombie DownLoader", false)
+        guiWindowSetSizable(Panel, false)
+        guiSetProperty(Panel, "CaptionColour", "FFFF0000")
+
+        combo = guiCreateComboBox(59, 32, 328, 116, "", false, Panel)
+
+        GUIEditor.button[1] = guiCreateButton(338, 4, 15, 196, "", false, combo)
+
+        boton = guiCreateButton(10, 32, 44, 20, "<-", false, Panel)
+        boton1 = guiCreateButton(394, 32, 44, 20, "->", false, Panel)
+        labe = guiCreateLabel(1, 59, 447, 22, "___________________________________________________________________________________________________", false, Panel)
+        guiLabelSetColor(labe, 255, 0, 0)
+        labe2 = guiCreateLabel(0, 326, 447, 22, "___________________________________________________________________________________________________", false, Panel)
+        guiLabelSetColor(labe2, 255, 0, 0)
+        boton2 = guiCreateButton(177, 348, 89, 27, "Cerrar", false, Panel)
+        kendry = guiCreateLabel(309, 358, 138, 20, "Zombie DownLoader", false, Panel)
+        guiSetFont(kendry, "default-bold-small")
+        guiLabelSetColor(kendry, 54, 254, 0)
+        labe3 = guiCreateLabel(28, 81, 83, 22, "Nombre", false, Panel)
+        guiSetFont(labe3, "default-bold-small")
+        guiLabelSetColor(labe3, 3, 250, 154)
+        labe4 = guiCreateLabel(345, 81, 83, 22, "Informacion", false, Panel)
+        guiSetFont(labe4, "default-bold-small")
+        guiLabelSetColor(labe4, 3, 250, 154)
+        labe5 = guiCreateLabel(23, 110, 409, 209, "", false, Panel)    
+    end
+)

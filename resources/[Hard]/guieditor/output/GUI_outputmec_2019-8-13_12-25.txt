@@ -1,0 +1,14 @@
+
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()
+local screenW, screenH = guiGetScreenSize()
+        panel = guiCreateWindow((screenW - 385) / 2, (screenH - 455) / 2, 385, 455, "Panel de Mecanico", false)
+        guiWindowSetSizable(panel, false)
+
+        Boton = guiCreateButton(141, 67, 110, 55, "Color", false, panel)
+        Boton2 = guiCreateButton(141, 152, 110, 55, "Ruedas", false, panel)
+        Boton3 = guiCreateButton(141, 234, 110, 55, "Alerones", false, panel)
+        Boton4 = guiCreateButton(141, 313, 110, 55, "Nitros", false, panel)
+        cerrar = guiCreateButton(141, 390, 110, 55, "Cerrar", false, panel)    
+    end
+)

@@ -1,0 +1,26 @@
+
+ventanaStats = guiCreateWindow(0.34, 0.28, 0.33, 0.44, "Estadisticas de Nombre_Apellido", true)
+guiWindowSetSizable(ventanaStats, false)
+
+TabPanel = guiCreateTabPanel(0.02, 0.07, 0.95, 0.90, true, ventanaStats)
+
+Jugador = guiCreateTab("Jugador", TabPanel)
+
+label = guiCreateLabel(0.02, 0.04, 0.95, 0.93, "PRÓXIMAMENTE", true, Jugador)
+guiSetFont(label, "default-bold-small")
+guiLabelSetColor(label, 255, 0, 0)
+guiLabelSetHorizontalAlign(label, "center", false)
+guiLabelSetVerticalAlign(label, "center")
+
+Sanciones = guiCreateTab("Sanciones", TabPanel)
+
+gridSanciones = guiCreateGridList(0.02, 0.04, 0.95, 0.93, true, Sanciones)
+guiGridListAddColumn(gridSanciones, "Jugador", 0.2)
+guiGridListAddColumn(gridSanciones, "Tipo", 0.2)
+guiGridListAddColumn(gridSanciones, "Motivo", 0.2)
+guiGridListAddColumn(gridSanciones, "Moderador", 0.2)
+guiGridListAddRow(gridSanciones)
+guiGridListSetItemText(gridSanciones, 0, 1, "Carlos_Duran", false, false)
+guiGridListSetItemText(gridSanciones, 0, 2, "Jail", false, false)
+guiGridListSetItemText(gridSanciones, 0, 3, "PG [NRH]", false, false)
+guiGridListSetItemText(gridSanciones, 0, 4, "Atomix", false, false)

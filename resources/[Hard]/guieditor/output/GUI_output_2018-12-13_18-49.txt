@@ -1,0 +1,16 @@
+
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()
+local screenW, screenH = guiGetScreenSize()
+        panel = guiCreateWindow((screenW - 206) / 2, (screenH - 326) / 2, 206, 326, "Teleports", false)
+        guiWindowSetSizable(panel, false)
+        guiSetProperty(panel, "CaptionColour", "FFFF0000")
+
+        botton = guiCreateButton(40, 59, 126, 50, "Base LS", false, panel)
+        botton2 = guiCreateButton(40, 185, 126, 50, "Hospital", false, panel)
+        botton1 = guiCreateButton(40, 125, 126, 50, "Base SF", false, panel)
+        cerrar = guiCreateButton(40, 258, 126, 50, "Cerrar", false, panel)
+        guiSetFont(cerrar, "default-bold-small")
+        guiSetProperty(cerrar, "NormalTextColour", "FF00FE00")    
+    end
+)

@@ -1,0 +1,24 @@
+
+GUIEditor = {
+    button = {},
+    window = {},
+    label = {}
+}
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()
+        GUIEditor.window[1] = guiCreateWindow(0.33, 0.23, 0.35, 0.39, "Lista de trabajos", true)
+        guiWindowSetSizable(GUIEditor.window[1], false)
+
+        GUIEditor.label[1] = guiCreateLabel(29, 38, 126, 39, "Camionero", false, GUIEditor.window[1])
+        GUIEditor.label[2] = guiCreateLabel(29, 77, 126, 39, "Carpintero ", false, GUIEditor.window[1])
+        GUIEditor.label[3] = guiCreateLabel(29, 116, 126, 39, "Taxista", false, GUIEditor.window[1])
+        GUIEditor.label[4] = guiCreateLabel(29, 155, 126, 39, "Granjero", false, GUIEditor.window[1])
+        GUIEditor.label[5] = guiCreateLabel(29, 194, 126, 39, "Pizzero", false, GUIEditor.window[1])
+        GUIEditor.button[1] = guiCreateButton(10, 266, 459, 23, "Cerrar", false, GUIEditor.window[1])
+        GUIEditor.button[2] = guiCreateButton(197, 42, 89, 15, "Ubicar", false, GUIEditor.window[1])
+        GUIEditor.button[3] = guiCreateButton(197, 81, 89, 15, "Ubicar", false, GUIEditor.window[1])
+        GUIEditor.button[4] = guiCreateButton(197, 116, 89, 15, "Ubicar", false, GUIEditor.window[1])
+        GUIEditor.button[5] = guiCreateButton(197, 155, 89, 15, "Ubicar", false, GUIEditor.window[1])
+        GUIEditor.button[6] = guiCreateButton(197, 194, 89, 15, "Ubicar", false, GUIEditor.window[1])    
+    end
+)
